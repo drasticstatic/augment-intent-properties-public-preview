@@ -1,6 +1,7 @@
 # Findings Plan — source material + structure
 
-Captured from `~/intent/workspaces/__chief__/HANDOFF-create_augment-intent-properties-repo.md`
+Captured from
+`~/intent/workspaces/__chief__/AGENT-SYNC/created-by-mystarch/HANDOFF-create_augment-intent-properties-repo.md`
 (Mystarch, 2026-09-01) at repo-creation time, so nothing from that handoff gets lost. **The actual
 findings write-up has not been drafted yet** — this file is the starting scaffold for whoever picks
 that up next (Christopher, with LittlebirdAI's help per his own framing), not the report itself.
@@ -10,6 +11,12 @@ that up next (Christopher, with LittlebirdAI's help per his own framing), not th
 Christopher's own framing (2026-09-01): "compiling all this information with the help of
 LittlebirdAI closing gaps to share this as an issue with Augment's support team... in a nice html
 surface to get this resolved."
+
+**Framing note (2026-09-02, Christopher):** this is not meant to put Augment Intent in a bad light.
+The goal is to get to the bottom of the interop friction constructively, while genuinely showcasing
+the magic of Intent's properties/matrix — its spec-driven orchestration and workspace/delegation
+model — and how to use it well when paired with Anthropic's models. Whoever drafts the actual report
+should lead with what works, not just what's broken.
 
 Secondary, non-blocking hopes (don't over-scope the report around these): possible recovery of lost
 Auggie token usage from affected sessions, and a channel for the direct Augment dev contacts
