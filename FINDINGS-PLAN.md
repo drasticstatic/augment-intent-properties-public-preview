@@ -37,6 +37,15 @@ Christopher has already made via email/LinkedIn.
 - **Recurring "awaiting tool response" / stream-timeout pattern** — worth documenting as its own data
   point alongside the GitHub-connect gap: multiple 30-minute timeouts and UI-frozen states observed
   across Intent sessions, distinct from (but possibly related to) the Auggie-login gap.
+- **Confirmed, directly-reproducible: zero `ws.app.*` reach from a plain Claude Code CLI session
+  outside Intent** (2026-09-03) — a sharper data point than the mostly-inferred/symptom-based
+  entries above (the `auggie login` prompt, timeout patterns). A session launched against
+  `~/code/mystarch_chief-of-staff` (the native-terminal fallback, not through Intent's UI or its
+  desktop-app terminal-instance feature) has **no `ws.app.*` tool surface at all** — not degraded,
+  absent — while `git`/`gh` and normal file editing work identically to an Intent-launched session.
+  Documented in `mystarch_chief-of-staff/specs/chief-of-staff-operating-model.md` § 5 and
+  `anthropas-argus-alfred/sandbox/INTENT_WORKTREE_LEGEND.md`'s "Where session chat logs actually
+  live" section — pull the exact wording from those two rather than re-deriving it here.
 
 ## Proposed structure (per the handoff — confirm/adjust before drafting)
 
