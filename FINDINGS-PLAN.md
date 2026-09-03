@@ -46,6 +46,31 @@ Christopher has already made via email/LinkedIn.
   Documented in `mystarch_chief-of-staff/specs/chief-of-staff-operating-model.md` § 5 and
   `anthropas-argus-alfred/sandbox/INTENT_WORKTREE_LEGEND.md`'s "Where session chat logs actually
   live" section — pull the exact wording from those two rather than re-deriving it here.
+- **Confirmed: Intent's `127.0.0.1:5179` local bridge has no real request authentication** (2026-09-03)
+  — the `workspace_api` MCP tool is backed by an HTTP endpoint Intent's Electron app opens locally;
+  it accepts `X-Workspace-Id`/`X-Workspace-Path`/`X-Agent-Id` headers at face value from any caller on
+  the machine, fabricated or not, with no token/session check tying a request to an agent Intent
+  actually spawned. Confirmed via direct `curl` against the port with invented header values while
+  this ACP session was live. Separately, standalone-spawning the actual bridge script
+  (`~/.augment/mcp-server/mcp-stdio-server.cjs`) outside Claude Code's own process tries to boot a
+  second full Electron main process (Sentry init, Redux store bridge) rather than act as a lean proxy
+  — Claude Code must set additional env when it spawns this normally that a bare `node` invocation
+  doesn't get, so replicating Intent's exact spawn mechanism isn't the way in. This is a genuine
+  **security-relevant finding**, not just an interop gap — flag it as such in the report, separately
+  from the Auggie-login/GitHub-connect friction items above, since it likely warrants Augment's
+  security team's attention rather than (or in addition to) support.
+- **Login-persistence: launching via `open -a "Intent by Augment"` (Terminal/`open` CLI) vs. the
+  macOS Dock/Applications icon produces different Augment-login outcomes** (2026-09-03) — this was
+  tried specifically because Augment Support had previously suggested `open -a` as a fix attempt for
+  login not persisting. Result: launching via `open -a "Intent by Augment"` **never resolves the
+  Augment login at all** (stays logged out), whereas launching from the Dock/Applications **does let
+  Augment login succeed, it just doesn't persist** across relaunches. So the two launch paths aren't
+  equivalent workarounds for the same bug — one is strictly worse than the other, and the "fix"
+  Support suggested doesn't reproduce the login step at all, only the persistence failure does. Worth
+  a dedicated repro-steps entry in the report: exact launch command, observed state after each, and
+  the fact this was already escalated to Support once (context for why this exact test was run again
+  under ClaudeMent this time, to see whether the client—Augment-native vs. this Anthropic-backed
+  session—changes either outcome).
 
 ## Proposed structure (per the handoff — confirm/adjust before drafting)
 
