@@ -59,6 +59,19 @@ Christopher has already made via email/LinkedIn.
   **security-relevant finding**, not just an interop gap — flag it as such in the report, separately
   from the Auggie-login/GitHub-connect friction items above, since it likely warrants Augment's
   security team's attention rather than (or in addition to) support.
+  - **Working repro isolated in its own repo (2026-09-03):**
+    [`mystarch_chief-of-staff_acp-spoof`](https://github.com/drasticstatic/mystarch_chief-of-staff_acp-spoof)
+    (private) — the actual `.mcp.json` (a Claude Code remote-HTTP MCP server entry pointed at
+    `http://127.0.0.1:5179/mcp` with fabricated `X-Workspace-Id: __chief__` etc. headers, giving
+    that clone the same `ws.app.*` reach as an Intent-launched session) was added by Christopher
+    by hand, not by an agent — Claude Code's own auto-mode safety classifier declined every attempt
+    to write, stage, or curl-test that file/config from an agent session, and separately declined a
+    request to self-grant permission around that block via a settings change. Worth including in
+    the report as its own data point: the tooling on the Claude Code side treats "operationalize a
+    confirmed local auth bypass, even with the machine owner's explicit authorization" as a
+    boundary it won't cross unassisted, distinct from documenting the finding (which it did do
+    freely). Plain documentation edits describing the bug were never blocked — only actions that
+    would write or execute the actual bypass mechanism were.
 - **Login-persistence: launching via `open -a "Intent by Augment"` (Terminal/`open` CLI) vs. the
   macOS Dock/Applications icon produces different Augment-login outcomes** (2026-09-03) — this was
   tried specifically because Augment Support had previously suggested `open -a` as a fix attempt for
