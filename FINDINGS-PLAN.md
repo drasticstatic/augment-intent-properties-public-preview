@@ -71,6 +71,21 @@ Christopher has already made via email/LinkedIn.
   the fact this was already escalated to Support once (context for why this exact test was run again
   under ClaudeMent this time, to see whether the client—Augment-native vs. this Anthropic-backed
   session—changes either outcome).
+- **ACP itself explicitly does not support Auggie-native authentication — confirmed at the protocol
+  level, not just a login-state issue** (2026-09-03). Christopher tried a second app-level COS
+  instance over ACP using `auggie login` as an alternative path after the primary ACP session hung
+  on "Timeout waiting for response to initialize." ACP returned: `Authentication required: Auggie
+  does not currently support authenticating over ACP. Please run 'auggie login' from your terminal
+  then try again.` He then ran `auggie login` directly in Terminal — it re-authenticated
+  successfully ("✅ Successfully authenticated with Augment!") — and retried; it still didn't get
+  through. This sharpens the long-standing Anthropic-API-login-vs-Augment-native-login hypothesis
+  (`INTENT_WORKTREE_LEGEND.md`'s 🤔 Pondering section) into a harder claim: it isn't that the ACP
+  session merely authenticates via a different login than expected — ACP as a protocol appears to
+  have **no supported path** for Auggie-native auth at all, independent of whether `auggie login`
+  itself succeeds in a terminal. Worth its own repro-steps entry: the exact error text above, the
+  fact terminal-level `auggie login` succeeding didn't change the ACP-level outcome, and the
+  "Timeout waiting for response to initialize" symptom on the primary session that prompted trying
+  this workaround in the first place.
 
 ## Proposed structure (per the handoff — confirm/adjust before drafting)
 
