@@ -5,7 +5,7 @@
 | Layer | Who it serves | Its one job | Status (2026-10-25) |
 |---|---|---|---|
 | 🕸️ **Graphify** | AI helpers working on a codebase | A map of the code, so helpers read less and understand more | ✅ **In use:** I Am One Self and David Amaringo now carry one; eight fleet repos already did |
-| 🧭 **BASE** | Claude Code, across a whole machine | Memory of rules, decisions and projects, placed into every turn | 🔍 **Promising; evaluate before installing** (below) |
+| 🧭 **BASE** | Claude Code, across a whole machine | Memory of rules, decisions and projects, placed into every turn | 🔍 **Fine for a builder's own machine; foundation-level once Codex is supported** (below) |
 | 🌌 **Cosmos Files** | A whole organization's Cosmos helpers | Shared notes and skills that every Expert in a Space can read | ⏳ With the Cosmos pilot ([WHY-COSMOS](../proposals/WHY-COSMOS.md)) |
 | 📚 **Alexandrina** | Visitors and members | Answers **only from an organization's own materials**, with sources, plus help desks | ✅ **In use for PIR;** proposed for The Holy Earth Foundation |
 | 🔎 **Site search** | Visitors | Finding a page or a phrase | ✅ In use (two kinds, below) |
@@ -52,6 +52,34 @@ binary.
 - **Overlap:** its code map overlaps with Graphify, which we already use. Its unique gift is the
   memory of rules and decisions. We partly cover that today with `AGENTS.md`, `PENDING-TASKS.md` and
   `AGENT-SYNC/`.
+
+**Would it help at the foundation (organization) level, or only on one person's computer?** (checked
+against BASE's README, changelog and design notes, 2026-10-25)
+
+- **Today it's per computer, and Claude Code only.** BASE runs on one machine and briefs Claude Code
+  sessions there. Codex and Antigravity are listed as "coming soon". Kenney works in ChatGPT and Codex, so
+  it can't brief him yet. Our shared layers (`AGENTS.md`, `PENDING-TASKS.md`, `AGENT-SYNC/`, Cosmos Spaces)
+  already reach every tool.
+- **It *can* become shared memory.** Each workspace's notes live in that workspace's `.base/` folder as
+  plain text that diffs in git. Committing a foundation repo's `.base/` would give every Claude Code
+  user of that repo the same projects, decisions and rules. That's the org-level path, once Codex
+  support lands and the foundation chooses it.
+- **Would it bring personal context into foundation work?** Two answers:
+  - **It used to.** BASE's own notes record that a session-start scan once stamped every workspace's
+    projects into whichever workspace was current, and that prompt-time rules once fired across unrelated
+    work. Version **0.16 (2026-10-06)** fixed both: entries of other workspaces move back where they
+    belong, writes go to the workspace you're in, and the file being touched decides which rules load.
+  - **It still can, through the global tier.** Anything recorded globally (`~/.base-gbl`) is read
+    everywhere, foundation repos included. A builder who uses BASE should keep personal rules and
+    decisions in a **personal workspace**, never global.
+- **The guard is already in place:** both foundation site repos now ignore `.base/` and `.base-ast/` (the
+  code map BASE writes into any repo it touches), and their tripwires block both from publishing. Sharing
+  BASE memory would be a deliberate decision, never an accident.
+- **Auto-update is on by default.** BASE replaces itself from its GitHub releases at session start. On a
+  builder machine, pin it (`base config set update.auto false`) and update on purpose.
+
+**Recommendation:** fine to try on a builder's own machine for the fleet, set up as above. For the
+foundation, revisit when Codex support lands; the shared-`.base/` path is the one to evaluate then.
 
 **How to evaluate it safely (one afternoon):**
 1. Read `install.sh` and the hook scripts. Confirm what they read, write and send; that there are no
