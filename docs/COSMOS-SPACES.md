@@ -10,6 +10,10 @@ A newcomer's Space is set up to be **safe to play in without being a cage**:
 - everything lands on rehearsal first;
 - room to grow when the team is ready.
 
+> 🔭 **2026-10-26:** Cosmos now belongs to Harness (bought 8 October 2026). Spaces carry on exactly as
+> described here, at the same address, and **nothing needs migrating today**. See
+> [Spaces after the Harness move](#-spaces-after-the-harness-move).
+
 ![Cosmos Spaces, 2026-10-05: The Holy Earth Foundation, Psychedelics in Recovery, Psanctuary Church and ORG](assets/cosmos-spaces-2026-10-05.png)
 
 *The Spaces as created on 2026-10-05.*
@@ -72,6 +76,29 @@ Nothing in that week can touch the live site without his own "Promote".
 | A "first responder" Expert | Turns a visitor's question into a draft answer for Kenney to bless |
 | Wider GitHub App access | Owners widen the repositories it may see |
 | A shared Space with David | David's site, and his own review of the Spanish |
+
+## 🔭 Spaces after the Harness move
+
+On **8 October 2026** Harness bought Cosmos, the Auggie CLI and Augment's Code Context Engine, with the team
+behind them ([Harness](https://www.harness.io/press-and-news/harness-acquires-augment-code) ·
+[Augment](https://www.augmentcode.com/blog/augment-code-next-chapter)). What that means for Spaces, as of
+2026-10-26:
+
+| | |
+|---|---|
+| **Today** | Spaces, Experts, Sessions, Files and secrets work as before. Cosmos is reached through Augment's site "for now" ([The New Stack](https://thenewstack.io/harness-augment-cosmos-acquisition/)), and the docs linked here are still Augment's |
+| **Later** | Cosmos is to move into the Harness platform "in the future". **No date, and no migration steps, have been published** |
+| **Not yet said** | Whether accounts, credits and code indexes carry over as they are (**to confirm**) |
+
+**Three habits that make any future move painless:**
+1. **Keep a copy in GitHub** of any shared File worth keeping (the glossary, the voice, decisions). The Space
+   is a working room; the repository is the record.
+2. **Keep secrets scoped** to "Used in: this Space only", so nothing needs untangling later.
+3. **After any account change, check as the person:** start a fresh session in the Space as the person it's
+   meant for, and confirm what they can and can't do.
+
+The full picture (dates, what Harness offers, the map from today's tools, cost guards):
+[Why Cosmos → Cosmos's new home: Harness](../proposals/WHY-COSMOS.md#-cosmoss-new-home-harness).
 
 ## 🔗 Related
 
