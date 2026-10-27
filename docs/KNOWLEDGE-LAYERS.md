@@ -6,7 +6,7 @@
 |---|---|---|---|
 | 🕸️ **Graphify** | AI helpers working on a codebase | A map of the code, so helpers read less and understand more | ✅ **In use:** I Am One Self and David Amaringo now carry one; eight fleet repos already did |
 | 🧭 **BASE** | Claude Code, across a whole machine | Memory of rules, decisions and projects, placed into every turn | 🔍 **Fine for a builder's own machine; foundation-level once Codex is supported** (below) |
-| 🌌 **Cosmos Files** | A whole organization's Cosmos helpers | Shared notes and skills that every Expert in a Space can read | ⏳ With the Cosmos pilot ([WHY-COSMOS](../proposals/WHY-COSMOS.md)) |
+| 🌌 **Cosmos Files** | A whole organization's Cosmos helpers | Shared notes and skills that every Expert in a Space can read | ⏳ With the Cosmos pilot ([WHY-COSMOS](../proposals/WHY-COSMOS.md)); Cosmos is Harness's since 2026-10-08 ([below](#-graphify-and-the-context-engine-now-harnesss)) |
 | 📚 **Alexandrina** | Visitors and members | Answers **only from an organization's own materials**, with sources, plus help desks | ✅ **In use for PIR;** proposed for The Holy Earth Foundation |
 | 🔎 **Site search** | Visitors | Finding a page or a phrase | ✅ In use (two kinds, below) |
 
@@ -29,6 +29,25 @@
   path`, `graphify explain`) instead of searching file by file.
 - **Guide:** [CONNECT-GRAPHIFY.md](https://github.com/drasticstatic/my-template/blob/main/walkthroughs/CONNECT-GRAPHIFY.md)
   · [full evaluation](https://github.com/drasticstatic/anthropas-argus-alfred-public-preview/blob/main/sandbox/GRAPHIFY_SETUP.md)
+
+## 🔭 Graphify and the Context Engine (now Harness's)
+
+Cosmos's helpers find their way around code with Augment's **Code Context Engine**. On **8 October 2026**
+Harness bought it along with Cosmos ([Harness](https://www.harness.io/press-and-news/harness-acquires-augment-code)).
+Harness is linking it to its **Software Delivery Knowledge Graph** (test runs, security findings,
+deployments, incidents) over MCP, so a Cosmos helper can see what happens to code *after* it ships
+([The New Stack](https://thenewstack.io/harness-augment-cosmos-acquisition/), read 2026-10-26).
+
+| | 🕸️ Graphify | 🧠 Context Engine (Harness) |
+|---|---|---|
+| **Where it runs** | On our own computer | In Augment's (now Harness's) cloud |
+| **Cost** | Free; no AI calls for code | Part of Cosmos usage |
+| **Who owns the map** | We do: plain files in our private workshop | The service holds the index (what happens to it on exit: **to confirm**) |
+| **Best at** | A portable map any helper can read | Live retrieval for Cosmos helpers, now joined to Harness's delivery history |
+
+**They complement each other.** Graphify stays our portable, owned map. It still works if any one service
+changes hands. The Context Engine is what makes Cosmos's helpers quick in a large codebase. Nothing about
+Graphify changes with the Harness purchase.
 
 ## 🧭 BASE: promising, evaluate before installing
 
