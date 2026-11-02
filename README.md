@@ -1,9 +1,29 @@
+<!-- readme-standard: 2026-11-02 -->
+<div align="center">
+
+<img src="docs/assets/banner.svg" width="100%" alt="Augment Intent Properties: a six-sided form draws itself, one named part at a time, for a model made of specs, workspaces and delegation.">
+
 # Augment Intent Properties 🔗
 
-> Showcasing what Augment Intent's orchestration model does well when paired with Anthropic's Claude models — and documenting the interop rough edges worth ironing out along the way.
+*What Intent's orchestration does well on Anthropic's Claude models, and the interop rough edges worth ironing out.*
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey?style=flat)](LICENSE)
 [![Public Preview](https://img.shields.io/badge/%F0%9F%8C%90%20Public%20Preview-Available-brightgreen)](https://drasticstatic.github.io/augment-intent-properties-public-preview/) [![Synced via GitHub Actions](https://img.shields.io/badge/Synced%20via-GitHub%20Actions-blue)](https://github.com/drasticstatic/augment-intent-properties/actions/workflows/sync-public.yml) [![Built with Claude Code](https://img.shields.io/badge/Built%20with-Claude%20Code%20CLI-blueviolet)](https://code.claude.com/docs/en/overview) [![Status](https://img.shields.io/badge/Status-%F0%9F%94%A5%20Active%20Build-orange)](https://github.com/drasticstatic/augment-intent-properties)
+
+<img src="docs/assets/icons/map-pin.svg" width="16" height="16" alt=""> **You are here:** drasticstatic lab › source `augment-intent-properties` (private) → twin `augment-intent-properties-public-preview` (public) · `main` is the working branch
+
+</div>
+
+## <img src="docs/assets/icons/compass.svg" width="24" height="24" alt=""> TL;DR
+
+1. <img src="docs/assets/icons/scan-search.svg" width="16" height="16" alt=""> **What this is.** A fair, evidence-based look at Intent's spec-driven orchestration as it runs on Claude.
+2. <img src="docs/assets/icons/users-round.svg" width="16" height="16" alt=""> **Who it is for.** Augment's support team, and anyone running Intent on a Claude-backed seat.
+3. <img src="docs/assets/icons/footprints.svg" width="16" height="16" alt=""> **Do this first.** [Explore the public preview](https://drasticstatic.github.io/augment-intent-properties-public-preview/). The public version holds only sanitized, generalized findings.
+
+---
+
+> Showcasing what Augment Intent's orchestration model does well when paired with Anthropic's Claude models — and documenting the interop rough edges worth ironing out along the way.
+
 
 ---
 
@@ -75,3 +95,9 @@ This is a solo-developer project (Christopher Wilson) built with AI-agent assist
 ---
 
 *Built and maintained by [drasticstatic](https://github.com/drasticstatic) · w/ Anthropic's Claude Code CLI + Augment Intent*
+
+## <img src="docs/assets/icons/git-pull-request.svg" width="24" height="24" alt=""> Suggest a change
+
+Noticed something? Open an [issue](../../issues) or a pull request against `main`; Christopher reads them and a person with the role merges. Not on GitHub? Reach him through any channel on [his profile](https://github.com/drasticstatic). On the public preview, please open an issue rather than a pull request: its files are synced from the private source, so a change made only there would be overwritten.
+
+<sub>The front door follows the living [README standard](https://github.com/drasticstatic/my-template/blob/main/README-STANDARD.md). Copy it, improve it.</sub>
