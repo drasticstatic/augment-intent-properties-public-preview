@@ -7,8 +7,8 @@
 
 *What Intent's orchestration does well on Anthropic's Claude models, and the interop rough edges worth ironing out.*
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey?style=flat)](LICENSE)
-[![Public Preview](https://img.shields.io/badge/%F0%9F%8C%90%20Public%20Preview-Available-brightgreen)](https://drasticstatic.github.io/augment-intent-properties-public-preview/) [![Synced via GitHub Actions](https://img.shields.io/badge/Synced%20via-GitHub%20Actions-blue)](https://github.com/drasticstatic/augment-intent-properties/actions/workflows/sync-public.yml) [![Built with Claude Code](https://img.shields.io/badge/Built%20with-Claude%20Code%20CLI-blueviolet)](https://code.claude.com/docs/en/overview) [![Status](https://img.shields.io/badge/Status-%F0%9F%94%A5%20Active%20Build-orange)](https://github.com/drasticstatic/augment-intent-properties)
+[![License: MIT](https://img.shields.io/badge/license-MIT-1a1a2e?style=flat)](LICENSE)
+[![Public Preview](https://img.shields.io/badge/%F0%9F%8C%90%20Public%20Preview-Available-5c1a2b)](https://drasticstatic.github.io/augment-intent-properties-public-preview/) [![Synced via GitHub Actions](https://img.shields.io/badge/Synced%20via-GitHub%20Actions-1a1a2e)](https://github.com/drasticstatic/augment-intent-properties/actions/workflows/sync-public.yml) [![Built with Claude Code](https://img.shields.io/badge/Built%20with-Claude%20Code%20CLI-5c1a2b)](https://code.claude.com/docs/en/overview) [![Status](https://img.shields.io/badge/Status-%F0%9F%94%A5%20Active%20Build-800020)](https://github.com/drasticstatic/augment-intent-properties)
 
 <img src="docs/assets/icons/map-pin.svg" width="16" height="16" alt=""> **You are here:** drasticstatic lab › source `augment-intent-properties` (private) → twin `augment-intent-properties-public-preview` (public) · `main` is the working branch
 
