@@ -193,7 +193,7 @@ The custodian's tooling path has followed Augment from the start:
 
 | What we use | Under Harness | Portable alternative |
 |---|---|---|
-| 🌌 **Cosmos Spaces** (one per organization) | The same Spaces at the same address; into the Harness platform later, no date | `AGENTS.md`, `PENDING-TASKS.md` and `agent-notes/` in GitHub |
+| 🌌 **Cosmos Spaces** (one per organization) | The same Spaces at the same address; into the Harness platform later, no date | `AGENTS.md`, `PENDING-TASKS.md` and the agents' handoff notes in GitHub |
 | 🧑‍🔧 **Experts** (site helper, review helper) | The same prebuilt Experts; Harness Worker Agents too, if we ever run Harness pipelines | Claude Code or Codex doing the same job on request |
 | 🗂️ **Files and Skills** | Shared org memory in Cosmos | Copies in GitHub; Skills in the open format |
 | 🧠 **Context Engine** | Now Harness's, linked to its delivery knowledge graph over MCP | **Graphify**, local and free ([KNOWLEDGE-LAYERS](../docs/KNOWLEDGE-LAYERS.md)) |
@@ -204,7 +204,7 @@ The custodian's tooling path has followed Augment from the start:
 ### 🪨 What stays the same
 
 - **GitHub is home** for every organization's repositories, issues and records.
-- **One rulebook** (`AGENTS.md`) and **one notebook** (`PENDING-TASKS.md`, `agent-notes/`) for every helper.
+- **One rulebook** (`AGENTS.md`) and **one notebook** (`PENDING-TASKS.md`, the agents' handoff notes) for every helper.
 - **Claude Code CLI** stays the daily driver; each person keeps their own helpers.
 - **Graphify maps** stay in the private workshops.
 - **Our rails:** rehearsal first, the tripwire, the secret scan, the never-publish rule.

@@ -77,7 +77,7 @@ against BASE's README, changelog and design notes, 2026-10-25)
 
 - **Today it's per computer, and Claude Code only.** BASE runs on one machine and briefs Claude Code
   sessions there. Codex and Antigravity are listed as "coming soon". Kenney works in ChatGPT and Codex, so
-  it can't brief him yet. Our shared layers (`AGENTS.md`, `PENDING-TASKS.md`, `agent-notes/`, Cosmos Spaces)
+  it can't brief him yet. Our shared layers (`AGENTS.md`, `PENDING-TASKS.md`, the agents' handoff notes, Cosmos Spaces)
   already reach every tool.
 - **It *can* become shared memory.** Each workspace's notes live in that workspace's `.base/` folder as
   plain text that diffs in git. Committing a foundation repo's `.base/` would give every Claude Code
@@ -141,7 +141,7 @@ retreat site's full text too.
 ## 🌱 What every organization gets, as these layers mature
 
 1. **A code map** in each workshop repository (Graphify). This is now standard.
-2. **One rulebook and one notebook** (`AGENTS.md`, `PENDING-TASKS.md`, `agent-notes/`). This is already
+2. **One rulebook and one notebook** (`AGENTS.md`, `PENDING-TASKS.md`, the agents' handoff notes). This is already
    standard ([org onboarding kit](https://github.com/drasticstatic/my-template/tree/main/org-onboarding)).
 3. **A Cosmos Space** with shared Files and Skills.
 4. **A cited help desk** (Alexandrina), when the organization wants one.
