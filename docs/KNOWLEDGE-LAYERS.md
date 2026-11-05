@@ -70,7 +70,7 @@ binary.
   means pinning versions.
 - **Overlap:** its code map overlaps with Graphify, which we already use. Its unique gift is the
   memory of rules and decisions. We partly cover that today with `AGENTS.md`, `PENDING-TASKS.md` and
-  `agent-notes/`.
+  the agents' handoff notes.
 
 **Would it help at the foundation (organization) level, or only on one person's computer?** (checked
 against BASE's README, changelog and design notes, 2026-10-25)

@@ -76,7 +76,7 @@ Source: [Getting started with Cosmos](https://docs.augmentcode.com/cosmos/gettin
 | **Littlebird** | on your own computer | remembering your day, privately |
 | **Cosmos** | in the organization's cloud, on events | reviewing, maintaining, coordinating; shared memory across a whole team |
 
-They share one rulebook (`AGENTS.md`), one notebook (`PENDING-TASKS.md`, `agent-notes/`) and one credit
+They share one rulebook (`AGENTS.md`), one notebook (`PENDING-TASKS.md` and the agents' handoff notes) and one credit
 line. See [Many AI tools, one team](https://github.com/drasticstatic/my-template/blob/main/walkthroughs/MANY-AI-TOOLS-ONE-TEAM.md).
 
 ## 🛡️ Safeguards, as the docs describe them
